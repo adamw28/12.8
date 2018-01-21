@@ -52,11 +52,11 @@ button:hover{
 }
 #callmebackdone{
 	top:45%;
-	box-shadow:0px 0px 20px 10000px rgba(110,110,110,0.9);
+	box-shadow:0px 0px 20px 1000000px rgba(110,110,110,0.9);
 }
 #subscribedone{
 	top:-25%;
-	box-shadow:0px 0px 20px 10000px rgba(110,110,110,0.9);
+	box-shadow:0px 0px 20px 1000000px rgba(110,110,110,0.9);
 }
 #callmebackdone h4, #subscribedone h4{
 	font-size: 20px;
@@ -84,18 +84,21 @@ header{
 }
 header .menu{
 	padding:2% 10% 0;
-	background:#000;}
+	background:#000;
+}
 header .menu img{
 	display: block;
 	width:50px;
 	height:51px;
 	margin:0;
-	float:left;}
+	float:left;
+}
 header .menu ul{
 	display:flex;
 	justify-content: space-around;
 	margin:0;
 	height:100%;
+	padding:0;
 }
 header .menu ul li{
 	list-style:none;
@@ -150,7 +153,7 @@ header .callmeback{
 	z-index:100;
 	padding:30px;
 	display:none;
-	box-shadow:0px 0px 20px 10000px rgba(110,110,110,0.9);
+	box-shadow:0px 0px 20px 1000000px rgba(110,110,110,0.9);
 }
 header .callmeback input{
 	background: #fff;
@@ -188,7 +191,7 @@ header .callmeback input{
 	line-height: 30px;
 	margin:0;
 }
-.aboutus .col-md-6{
+.aboutus .about{
 	text-align: left;
 }
 .aboutus p{
@@ -215,17 +218,17 @@ header .callmeback input{
 	display:flex;
 	justify-content: center;
 }
-.services .row .col-md-2{
+.services .row .service{
 	border-left:2px solid #bebebe;
 	font-weight: 600;
 	line-height: 18px;
 	padding:10px 15px;
 	padding:0 30px;
 }
-.services .row .col-md-2:last-child{
+.services .row .service:last-child{
 	border-right:2px solid #bebebe;
 }
-.services .row .col-md-2 h6{
+.services .row .service h6{
 	color:  #7e7e7e;
 	font-weight: 300;
 	line-height: 21px;
@@ -242,7 +245,7 @@ header .callmeback input{
 	list-style:none;
 	border:1px solid #cfcfcf;
 	border-radius: 30px;
-	padding:0 20px;
+	padding:0 25px;
 	display:flex;
 	align-items: center;
 	width: 44%;
@@ -255,37 +258,38 @@ header .callmeback input{
 	line-height: 18px;
 	padding:20px 10px;
 	border-right:1px solid #cfcfcf;
+	border-bottom:5px solid #ededed;
 	width: 30%;
 }
 .ourprojects .menu-slider li:last-child{
-	border:none;
+	border-right:none;
 }
 .ourprojects .menu-slider li:hover,.ourprojects .menu-slider li:active{
-	border-bottom:5px solid #b88b58;
+	border-bottom-color: #b88b58;
 }
 .ourprojects h2,.ourprojects h5{
 	font-weight: 600;
 	line-height: 30px;
 }
-.ourprojects .container .row .col-md-3{
+.ourprojects .container .row .project{
 	padding:20px;
 	position:relative;
 }
 .ourprojects .container .row img{
 	padding:0;
 }
-.ourprojects .container .row .col-md-3 .imghover{
+.ourprojects .container .row .project .imghover{
 	display:none;
 }
-.ourprojects .container .row .col-md-3:hover .imghover {
+.ourprojects .container .row .project:hover .imghover {
 	color:#fff;
 	background: rgba(0,0,0,0.75);
 	display:block;
 }
-.ourprojects .container .row .col-md-3::after::first-letter{
+.ourprojects .container .row .project::after::first-letter{
 	font-size:24px;
 }
-.ourprojects .container .row .col-md-3:hover::before{
+.ourprojects .container .row .project:hover::before{
 	content:'ABOUT';
 	color:#fff;
 	margin:35px;
@@ -298,7 +302,7 @@ header .callmeback input{
 	left:20px;
 	z-index: 100;
 }
-.ourprojects .container .row .col-md-3:hover::after{
+.ourprojects .container .row .project:hover::after{
 	content:'Praesent metus urna, feugiat a placerat elementum at leo';
 	color:#fff;
 	background: rgba(0,0,0,0.75);
@@ -502,44 +506,44 @@ header .callmeback input{
 .clientlogos img{
 	margin:0 40px;
 }
-.price{
+.prices{
 	margin:40px 0;
 }
-.price h2{
+.prices h2{
 	font-weight: 600;
 	line-height: 30px;
 }
-.price p{
+.prices p{
 	color:  #aeaeae;
 	font-weight: 600;
 	line-height: 30px;
 }
-.price .chooseprice{
+.prices .chooseprice{
 	color:  #242424;
 	background: #fff;
 	padding:20px;
 	}
-.price .chooseprice h5{
+.prices .chooseprice h5{
 	font-weight: 400;
 	line-height: 21px;
 }
-.price .chooseprice h2{
+.prices .chooseprice h2{
 	font-weight: 700;
 	line-height: 21px;
 }
-.price .chooseprice h6{
+.prices .chooseprice h6{
 	color:  #aeaeae;
 	font-size: 10px;
 	font-weight: 400;
 	line-height: 25px;
 }
-.price .chooseprice p{
+.prices .chooseprice p{
 	color:  #7e7e7e;
 	font-size: 10px;
 	font-weight: 400;
 	line-height: 13px;
 }
-.price .chooseprice button{
+.prices .chooseprice button{
 	border-radius: 20px;
 	background-color:  #373737;
 	border:none;
@@ -549,7 +553,7 @@ header .callmeback input{
 	font-weight: 700;
 	line-height: 18px;
 }
-.price .chooseprice button:hover{
+.prices .chooseprice button:hover{
 	background: #b88b58;
 }
 .premium{
@@ -560,10 +564,10 @@ header .callmeback input{
 .premium .row{
 	border-bottom:1px solid #bebebe;
 }
-.premium .col-md-1 img:nth-child(1){
+.premium .icon img:nth-child(1){
 	margin:20px 0 180px;
 }
-.premium .col-md-1 img:nth-child(2){
+.premium .icon img:nth-child(2){
 	margin:0 0 40px;
 }
 .premium .paragraph{
@@ -604,26 +608,26 @@ header .callmeback input{
 .facts .row{
 	margin:0 85px;
 }
-.facts .row .col-md-3{
+.facts .row .fact {
 	padding:0 40px;
 }
-.facts .row .col-md-3 h2{
+.facts .row .fact  h2{
 	color:  #b88b58;
 	font-size: 48px;
 	font-weight: 700;
 	line-height: 28px;
 }
-.facts .row .col-md-3 .line{
+.facts .row .fact  .line{
 	background:  #7e7e7e;
 	height: 3px;
 	width: 6%;
 	margin:15px auto;
 }
-.facts .row .col-md-3 h4{
+.facts .row .fact  h4{
 	font-weight: 600;
 	line-height: 24px;
 }
-.facts .row .col-md-3:nth-child(2) p,.facts .row .col-md-3:nth-child(4) p{
+.facts .row .fact :nth-child(2) p,.facts .row .fact :nth-child(4) p{
 	margin-top:35px;
 }
 .share{
@@ -688,7 +692,7 @@ header .callmeback input{
 	margin:0;
 	padding:0;
 }
-.contactus form .container .row .col-md-5 input{
+.contactus form .container .row .input input{
 	padding-right:15px;
 }
 .map{
@@ -793,4 +797,87 @@ footer>p:last-child{
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 25px;
+}
+@media (max-width: 767px ) {
+	header{
+		height:100%;
+	}
+	header .menu{
+		padding:0;
+	}
+	header .menu img{
+		float:none;display:inline-block;
+	}
+	header .menu ul{
+		float:none;
+		display:block;
+	}
+	header .menu ul li{
+		display: block;
+		width: 100%;
+		float:none;
+		margin:0;
+	}
+	header h1{
+		font-size:initial;
+		line-height: initial;
+		margin:40px;
+	}
+	.services .container .row{
+		display:block;
+	}
+	.services .container .row .service{
+		float:none;
+		border:none;
+		border-bottom:2px solid #bebebe;
+		margin-bottom: 5px;
+	}
+	.ourprojects .menu-slider{
+		flex-direction: column;
+		padding: 0 0 5px 0;
+		margin:0 auto;
+	}
+	.ourprojects .menu-slider li{
+		border-right:none;
+		padding:10px 5px;
+		width: 80%;
+	}
+	.clientlogos img{
+		margin:10px 10px;
+	}
+	.prices .chooseprice{
+		padding:10px;
+	}
+	.facts .row{
+		margin:0;
+	}
+	.share h5, .share p{
+		margin:0;
+	}
+	.map .address{
+		position: static;
+		width: 100%;
+	}
+	footer{
+		padding:10px;
+		display:block;
+	}
+	footer p{
+		width: 100%;
+	}
+	footer p:last-child{
+		position: static;
+	}
+	header .telephone{
+		right:10px;
+	}
+	header .callmeback{
+		left:10px;
+	}
+	#callmebackdone, #subscribedone{
+		left: 10px;
+		width: 90%;
+		padding: 10px;
+		text-align: center;
+	}
 }
