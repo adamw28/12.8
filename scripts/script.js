@@ -88,4 +88,7 @@ $(function(){
 			return 5 - current + target;
 		}
 	}
+	$(".x").on('click',function(){
+		$('.more').css('display','none');
+	});
 });
