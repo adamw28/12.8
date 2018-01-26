@@ -356,16 +356,16 @@ header {
             margin: 10px 5px;
             width: 65px;
             height: 42px; }
-        .ourprojects .under #secondcarousel #insidesecond .more-arrow #left, .ourprojects .under #secondcarousel #insidesecond .more-arrow #right {
-          border-radius: 50%;
-          background-color: #000000;
-          width: 36px;
-          height: 37px;
-          padding: 5px;
-          display: inline-block;
-          margin: 0 10px;
-          position: relative;
-          left: 9px; }
+    .ourprojects .under .more-arrow #left, .ourprojects .under .more-arrow #right {
+      border-radius: 50%;
+      background-color: #000000;
+      width: 36px;
+      height: 37px;
+      padding: 5px;
+      display: inline-block;
+      margin: 0 10px;
+      position: relative;
+      left: 9px; }
   .ourprojects .sub {
     width: 950px;
     margin: auto;
